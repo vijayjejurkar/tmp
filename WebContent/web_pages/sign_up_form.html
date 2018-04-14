@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" href="../images/atmecs_logo.ico" />
+  <title>**DSMS**</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">DSMS</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="../index.html">Home</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="btn active"><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="./login_form.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+  </nav>
+  <div class="singUpForm">
+    <form action="http://localhost:8080/employees/add_employee" method="post">
+      <label>Employee ID:</label>
+      <input type="text" placeholder="Employee ID" name = 'empId'>*<br><br>
+      <label>Email ID:</label>
+      <input type="text" placeholder="Email ID" name = 'emailId'>*<br><br>
+      <label>First Name:</label>
+      <input type="text" placeholder="First Name" name = 'firstName'>*<br><br>
+      <label>Last Name:</label>
+      <input type="text" placeholder="Last Name" name = 'lastName'>*<br><br>
+      <label>Mobile:</label>
+      <input type="number" placeholder="Mobile" name = 'mobileNumber'>*<br><br>
+      <label>Manager:</label>
+      <input type="text" placeholder="Manager" name = 'managerName'>*<br><br>
+      <label>Project Name:</label>
+      <input type="text" placeholder="Project Name" name = 'projectName'>*<br><br>
+      <button type="submit" class="btn btn-success">Create New Account</button>
+      <br><br><a href="./login_form.html">Aleready have an account?</a>
+    </form>
+
+  </div>
+  <div>
+  	<hr>
+  <footer align = "center">Copyright 2018 &copy; ATMECS, Inc. | All Rights Reserved.</footer>
+  </div>
+</body>
+</html>
